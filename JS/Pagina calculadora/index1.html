@@ -32,27 +32,31 @@
 
         <!--MODALES-->
 
-        <div id="miModal" class="modal">
-            <div id="modalContenido" class="modal-contenido">
-                <span id="cerrarModalBtn" class="cerrar">&times;</span>
-                <p id="modalMensaje">LAS CONTRASEÑAS NO COINCIDEN</p>
-                <button id="modalBotonAceptar" class="modal-boton">Aceptar</button>
+       <div id="Modal" class="modal">
+            <div id="contenidoPrimerModal" class="modal-contenido">
+                <span id="cerrarModal" class="cerrar">&times;</span>
+                <p id="mensajePrimerModal">LAS CONTRASEÑAS NO COINCIDEN</p>
             </div>
         </div>
 
-        <div id="miSegundoModal" class="otro-modal">
-            <div id="contenidoSegundoModal" class="contenido-otro-modal">
-                <span id="cerrarSegundoModal" class="cerrar-otro-modal">&times;</span>
+        <div id="Modal" class="modal">
+            <div id="contenidoSegundoModal" class="modal-contenido">
+                <span id="cerrarModal" class="cerrar">&times;</span>
                 <p id="mensajeSegundoModal">NOMBRE DE USUARIO YA EXISTENTE</p>
-                <button id="botonAceptarSegundoModal" class="boton-otro-modal">Continuar</button>
             </div>
         </div>
 
-        <div id="modalAlerta" class="modal-fondo-alerta">
-            <div id="contenidoModalAlerta" class="modal-caja-alerta">
-                <span id="cerrarModalAlerta" class="cerrar-alerta">&times;</span>
-                <p id="mensajeModalAlerta">CORREO YA EXISTENTE</p>
-                <button id="botonModalAlerta" class="boton-alerta">Entendido</button>
+        <div id="Modal" class="modal">
+            <div id="contenidoTercerModal" class="modal-contenido">
+                <span id="cerrarModal" class="cerrar">&times;</span>
+                <p id="mensajeTercerModal">CORREO YA EXISTENTE</p>
+            </div>
+        </div>
+
+        <div id="Modal" class="modal">
+            <div id="contenidoCuartoModal" class="modal-contenido">
+                <span id="cerrarModal" class="cerrar">&times;</span>
+                <p id="mensajeCuartoModal">Ingrese un @</p>
             </div>
         </div>
 
@@ -129,8 +133,8 @@
         }
     </script>
     <!--IA-->
-    <script src="js/main.js" type="module"></script>
-    <script src="js/static.js" type="module"></script>
-    <script src="js/Usuario.js"></script>
+    <script src="Js/main.js" type="module"></script>
+    <script src="Js/st.js" type="module"></script>
+    <script src="Js/Usuario.js" type="module"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@ export class st{
     matriz = [];
     static validarUsuarios(usuario1,i){
         let valor = false;
-        if(matriz[i][0]!=usuario1){
+        if(matriz[i][0]==usuario1){
             document.getElementById('miSegundoModal').style.display = flex;
         }else{
             valor = true;
@@ -11,7 +11,7 @@ export class st{
     }
     static validarCorreo(correo,i){
         let valor = false;
-        if(matriz[i][1]!=correo){
+        if(matriz[i][1]==correo){
             document.getElementById('modalAlerta').style.display = flex;
         }else{
             valor = true;
@@ -28,7 +28,7 @@ export class st{
         return valor;
     }
     static tabla(usuario, correo, contraseña){
-        matriz[-1] = [usuario,correo,contraseña]
+        matriz[-1] = [usuario,correo,contraseña];
         return matriz;
     }
     //CREEMOS PRIMERO LA TABLA PARA VALIDAR USUARIO Y CORREO
