@@ -478,5 +478,125 @@ body {
     }
 }
 
+/* Estilos para el TERCER Modal (con ID's y Clases completamente nuevas) */
+
+/* Contenedor principal del tercer modal (análogo a .modal) */
+.modal-fondo-alerta {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija en la pantalla */
+    z-index: 10; /* Z-index alto para que esté por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Permite scroll si el contenido es muy largo */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    backdrop-filter: blur(3px); /* Efecto de desenfoque en el fondo del modal */
+    animation: fadeInModal 0.3s ease-out; /* Reutiliza la animación de aparición */
+}
+
+/* Contenido del tercer modal (análogo a .modal-contenido) */
+.modal-caja-alerta {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro casi opaco */
+    padding: 30px;
+    border: 2px solid #0f0; /* Borde verde Matrix */
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6); /* Sombra verde brillante */
+    width: 80%;
+    max-width: 500px; /* Ancho máximo para pantallas grandes */
+    position: relative;
+    text-align: center;
+    color: #0f0; /* Texto verde Matrix */
+    animation: popUpModal 0.3s ease-out forwards; /* Reutiliza la animación de pop-up */
+}
+
+/* Botón de cierre del tercer modal (la 'X') (análogo a .cerrar) */
+.cerrar-alerta {
+    color: #0f0; /* Color verde Matrix */
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Sombra de texto verde */
+}
+
+.cerrar-alerta:hover,
+.cerrar-alerta:focus {
+    color: #0aff0a; /* Verde más brillante al pasar el ratón */
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Estilo del párrafo dentro del tercer modal (análogo a .modal-contenido p) */
+.modal-caja-alerta p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-shadow: 0 0 3px rgba(0, 255, 0, 0.5); /* Pequeña sombra al texto del mensaje */
+}
+
+/* Botón de acción dentro del tercer modal (análogo a .modal-boton) */
+.boton-alerta {
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.boton-alerta:hover {
+    background-color: #0aff0a;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.9);
+    transform: translateY(-2px);
+}
+
+/* Media Queries para el tercer modal (análogo a los modales anteriores) */
+@media (max-width: 768px) {
+    .modal-caja-alerta {
+        padding: 25px;
+        width: 90%;
+    }
+    .modal-caja-alerta p {
+        font-size: 1em;
+    }
+    .cerrar-alerta {
+        font-size: 26px;
+    }
+    .boton-alerta {
+        padding: 9px 18px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-caja-alerta {
+        padding: 20px;
+        border-radius: 8px; /* Agregado para consistencia con el container en móvil */
+    }
+    .modal-caja-alerta p {
+        font-size: 0.9em;
+    }
+    .cerrar-alerta {
+        font-size: 24px;
+        top: 8px;
+        right: 12px;
+    }
+    .boton-alerta {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
 /* Opcional: Si usas la fuente 'Press Start 2P' y la importas directamente en tu HTML */
 /* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
