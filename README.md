@@ -31,12 +31,16 @@ macOS/Linux:
 
     git config --global core.autocrlf input
 
-### 💡 Pro tip
+### 💡 Pro tips
 
 
 To have git fetch always remove stale remote references, set:
 
     git config --global fetch.prune true
+
+To delete all configs,
+
+    rm .git/config
 
 ## 3. 🌐 Connect to the Remote Repository
 
