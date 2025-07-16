@@ -59,7 +59,7 @@ To delete all configs,
         protocol=https
         host=github.com
 
-- press enter two times and try agin 
+- press enter two times and try agin. This gonna delate the old credentials
 
 ## 3. 🌐 Connect to the Remote Repository
 
