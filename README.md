@@ -40,7 +40,26 @@ To have git fetch always remove stale remote references, set:
 
 To delete all configs,
 
-    rm .git/config
+- First check how many names and emails are: 
+
+    git config --global --get-all user.name 
+    git config --global --get-all user.email
+
+- Second delete the name and email 
+
+    git config --global --unset user.name "NAME"
+    git config --global --unset user.email "EMAIL"
+
+- 🔥 IF THERE ARE OLD CREDENTIALS TRY THIS  
+
+    git credential reject
+
+- Then copy and paste this in this
+
+    protocol=https
+    host=github.com
+
+- press enter two times and try agin 
 
 ## 3. 🌐 Connect to the Remote Repository
 
