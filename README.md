@@ -36,7 +36,7 @@ Line Endings (OS-Specific)
 
 Windows:
 
-git config --global core.autocrlf true
+    git config --global core.autocrlf true
 
 macOS/Linux:
 
