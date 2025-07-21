@@ -48,6 +48,49 @@ Avoid accumulating stale branches from remote:
 
     git config --global fetch.prune true
 
+🧹🧨 How to Remove Another User's Git Configuration from Git Bash
+
+Sometimes, when working on a shared computer or switching between GitHub accounts, you may need to remove previous Git user settings. Here's how to do it safely and cleanly using Git Bash.
+
+🔧 Step-by-Step Instructions
+Open Git Bash
+Launch Git Bash on your computer.
+
+Check current Git user settings
+
+    git config --global user.name
+    git config --global user.email
+
+Unset previous user configuration
+
+If the user settings are not yours, remove them with:
+
+    git config --global --unset user.name
+    git config --global --unset user.email
+
+(Optional) Remove all global Git settings
+If you want a full reset of Git's global config:
+
+    rm ~/.gitconfig
+
+Set your own Git username and email
+
+After removing the old settings, set yours:
+
+    git config --global user.name "Your Name"
+    git config --global user.email "you@example.com"
+
+💡 Pro Tip
+Use --local instead of --global if you want to change settings only for the current repository:
+
+    git config --local user.name "Your Name"
+    git config --local user.email "you@example.com"
+
+✅ Done!
+You're now using your own Git identity. You can confirm with:
+
+    git config --list
+
 🔍 What it does: Ensures every time you run git fetch, Git automatically removes deleted remote branches locally.
 
 To clean local configuration completely (⚠️ Careful!):
