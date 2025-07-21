@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas Retro 🎮</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="listaTareas.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="task-app-container">
+            <h1>Lista de Tareas</h1>
+
+            <div class="task-input-section">
+                <input type="text" id="new-task-input" placeholder="Escribe tu tarea..." aria-label="Nueva tarea">
+                <button id="add-task-btn">Agregar</button>
+            </div>
+
+            <ul class="task-list">
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox" id="task1">
+                    <label for="task1" class="task-text">Comprar pociones de vida</label>
+                    <button class="delete-task-btn">Eliminar</button>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox" id="task2" checked>
+                    <label for="task2" class="task-text completed">Derrotar al jefe final</label>
+                    <button class="delete-task-btn">Eliminar</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
