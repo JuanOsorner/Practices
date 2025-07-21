@@ -237,7 +237,7 @@ Sometimes, you may want to explore the content of a Git branch without switching
 
 3. Run the following command to list all files in a specific branch:
 
-    git ls-tree -r --name-only <branch-name>
+   git ls-tree -r --name-only <branch-name>
 
 🔍 Replace <branch-name> with the name of the branch you want to inspect.
 
