@@ -2,6 +2,11 @@
 
 Your all-in-one Git & GitHub guide for efficient project management, collaboration, and good practices 🚀
 
+---------------
+    git config credential.helper ""
+
+----------
+
 ---
 
 ## 🧰 1. Download and Prepare the Project
