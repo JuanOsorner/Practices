@@ -41,6 +41,10 @@ btnEliminar.addEventListener('click',()=>{
     const nombre = document.getElementById('nombre').value;
     eliminarPocion(nombre);
 });
+const btnLeer = document.getElementById('btn-leer')
+btnLeer.addEventListener('click',()=>{
+    console.table(JSON.parse(localStorage.getItem("pociones"))||[]);
+});
 /*btnEliminar.addEventListener('click',()=>{
     limpiarDatos()
 });*/
