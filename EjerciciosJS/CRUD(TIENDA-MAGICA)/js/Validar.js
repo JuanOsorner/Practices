@@ -9,8 +9,7 @@ function crearPocion(dato1){
 //Eliminemos por id 
 function eliminarPocion(id){
     let pociones = JSON.parse(localStorage.getItem("pociones")||[]); //[] devuelve uno vacio si no encuentra pociones
-    let index = prompt("Ingrese la pocion a eliminar por orden de pedido: ");
-
+    let index = int(prompt("Ingrese la pocion a eliminar por orden de pedido: "));
 }
 /*function eliminarPocion(nombreP){
     //OBTENER EL ARREGLO
