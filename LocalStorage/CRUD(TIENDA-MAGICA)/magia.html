@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Pociones de la Comarca</title>
+    <link rel="stylesheet" href="./css/magia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="main-title">Tienda de Pociones de la Comarca 🌿</h1>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2 class="section-title">Forja tu Elixir 🧙‍♂️</h2>
+            <form id="pocion-form" class="potion-form">
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre de la Poción:</label>
+                    <input type="text" id="nombre" class="form-input" placeholder="Ej: Elixir de Vida" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad" class="form-label">Cantidad Deseada:</label>
+                    <input type="number" id="cantidad" class="form-input" min="1" value="1" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" id="btn-crear" class="btn btn-primary">Crear Poción ✨</button>
+                    <button type="button" id="btn-leer" class="btn btn-secondary">Ver Inventario 📜</button>
+                    <button type="button" id="btn-actualizar" class="btn btn-tertiary">Actualizar Poción 🔄</button>
+                    <button type="button" id="btn-eliminar" class="btn btn-danger">Eliminar Poción ❌</button>
+                    <button type="button" id="btn-buscar" class="btn btn-info">Buscar Poción 🔍</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="inventory-section">
+            <h2 class="section-title">Inventario de Pociones 🎒</h2>
+            <div id="lista-pociones" class="potion-list">
+                <p class="empty-state">ESTO AUN NO FUNCIONA</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Tienda de Pociones. Inspirado en la Tierra Media.</p>
+    </footer>
+
+    <script type="module" src="./js/Tabla.js"></script>
+    <script type="module" src="./js/Validar.js"></script>
+</body>
+</html>
