@@ -21,6 +21,25 @@
     --border-dashed-rustic: 2px dashed var(--color-accent-bronze);
 }
 
+/* --- Añade estas líneas a tu archivo magia.css --- */
+
+:root {
+    /* ... (tus variables existentes) ... */
+    --color-button-info: #6a5acd; /* Un tono púrpura o índigo para "buscar" */
+}
+
+/* ... (tus estilos existentes hasta el final de los botones) ... */
+
+.btn-info {
+    background-color: var(--color-button-info);
+}
+
+.btn-info:hover {
+    background-color: #5d4aaf; /* Un tono más oscuro al pasar el ratón */
+}
+
+/* ... (el resto de tu CSS) ... */
+
 body {
     font-family: 'Merriweather', serif; /* Fuente principal para legibilidad */
     background: url('https://user-images.githubusercontent.com/102073783/276580979-4d6f6e56-ff71-4654-8c88-2ffc42a20b12.png') no-repeat center center fixed; /* Fondo de bosque élfico o rústico */
@@ -218,7 +237,6 @@ body {
 }
 
 .empty-state {
-    display: none;
     text-align: center;
     color: var(--color-accent-bronze);
     font-style: italic;
