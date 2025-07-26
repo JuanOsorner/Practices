@@ -2,11 +2,6 @@
 
 Your all-in-one Git & GitHub guide for efficient project management, collaboration, and good practices 🚀
 
----------------
-    git config credential.helper ""
-
-----------
-
 ---
 
 ## 🧰 1. Download and Prepare the Project
@@ -95,6 +90,11 @@ Use --local instead of --global if you want to change settings only for the curr
 You're now using your own Git identity. You can confirm with:
 
     git config --list
+    git config --global --list
+
+🗑️To solve a problem of credentials write this:
+
+     git config credential.helper ""
 
 🔍 What it does: Ensures every time you run git fetch, Git automatically removes deleted remote branches locally.
 
