@@ -1,4 +1,4 @@
-import { localStorageTodoList } from "./localStorageTodoList.js";
+import { LSTodoList } from "./LSTodoList.js";
 const newUl = document.getElementById('taskList');
 const taskAddbutton = document.getElementById('taskAddButton');
 taskAddbutton.addEventListener('click',(e)=>{
@@ -20,34 +20,31 @@ taskAddbutton.addEventListener('click',(e)=>{
         eve.preventDefault();
         newLi.classList.add("completed");
         newElementCompletedbutton.textContent = "✅";
-        const tarea = {
-            nombreTarea: taskInput,
-            completada: "si"
-        }
+        //(*)Actualizar dato en el localStorage
     });
     newElementdiv.appendChild(newElementCompletedbutton);
     //(4)Creamos el boton basura
     const newElementDeletebutton = document.createElement('button');
     newElementDeletebutton.classList.add("delete-btn")
     newElementDeletebutton.textContent = "🗑️";
+    //(*)Eliminar tarea de localStorage
     newElementDeletebutton.addEventListener('click',(even)=>{
         even.preventDefault();
-        localStorageTodoList.eliminarDato(taskInput);
-        //localStorageTodoList.eliminarTodosLosDatos();
-    })
+    });
     newElementdiv.appendChild(newElementDeletebutton);
     //(5)Creamos el metodo eliminar tarea
     newElementDeletebutton.addEventListener('click',(ev)=>{
         ev.preventDefault();
         newUl.removeChild(newLi);
     });
-    //------------------------------------------------------------
-    const tarea = {
+    //(*)Creamos el elemento en el localStorage, pero primero debemos validar si existe o no
+    /*const tareas = {
         nombreTarea: taskInput,
         completada: "no"
     };
-    localStorageTodoList.guardarDatos(tarea);
+    LSTodoList.guardarDatos(tareas);*/
 });
 //Con appendchild marcamos la gerarquia de la creación 
 //Podemos usar removechild para eliminar 
 // Es mejor usar .classlist.add para añadir la clase
+/*Debemos encontrar los elementos por index*/
