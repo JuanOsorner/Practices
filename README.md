@@ -291,6 +291,18 @@ Sometimes, you may want to explore the content of a Git branch without switching
 
         git ls-tree -r --name-only main
 
+📄 Tricks 
+
+if you have a text and the console dosent leave you write follow the next steps: 
+
+1. 📄 Write a message
+
+2. 😁 press ESC 
+
+3. 👌 write :wq
+
+4. 👍 press ENTER 
+
 📊 11. GitHub Projects — Task Management
 
 🚀 Step 1: Create a New Project
