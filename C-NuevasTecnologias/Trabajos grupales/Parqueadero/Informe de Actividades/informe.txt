@@ -1,0 +1,19 @@
+=== INFORME DE ACTIVIDADES ===
+Placa: ABC123
+Tipo: Carro
+Hora Entrada: 08:00
+Hora Salida: 10:00
+Tarifa: $5000.00
+------------------------------
+Placa: XYZ789
+Tipo: Moto
+Hora Entrada: 09:30
+Hora Salida: 11:15
+Tarifa: $3000.00
+------------------------------
+Placa: LMN456
+Tipo: Camioneta
+Hora Entrada: 07:45
+Hora Salida: 12:30
+Tarifa: $7000.00
+------------------------------
